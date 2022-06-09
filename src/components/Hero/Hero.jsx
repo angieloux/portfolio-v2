@@ -28,7 +28,7 @@ const Header = () => {
           <h1 className="hero-title">
             {title}{'✨'}
             <br/>
-            {`I'm`}<span className="text-color-main"> {name}</span>{'.'}.
+            {`I'm`}<span className="text-color-main"> {name}</span>{'.'}
             <br />
             {subtitle}
           </h1>
@@ -38,7 +38,6 @@ const Header = () => {
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
                 {cta}
-                
               </Link>
               </span>
               <span className="cta-btn cta-btn--hero">
@@ -47,6 +46,11 @@ const Header = () => {
               </Link>
             </span>
           </p>
+          <span className="back-to-top">
+          <Link to="about" smooth duration={900}>
+            <i className="fa fa-angle-down fa-2x" aria-hidden="true" id="nav-arrow"/>
+          </Link>
+        </span>
         </Fade>
       </Container>
     </section>

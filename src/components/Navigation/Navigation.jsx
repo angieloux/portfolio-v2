@@ -2,10 +2,22 @@ import React, {useContext, useEffect, useState } from 'react'
 import {Link} from 'gatsby'
 import PortfolioContext from '../../context/context';
 
+
+
 import {Container, Nav, Navbar } from 'react-bootstrap'
 
 
 const Navigation = () => {
+    const [colorChange, setColorchange] = useState(false);
+    const changeNavbarColor = () =>{
+      if(window.scrollY >= 80){
+        setColorchange(true);
+      }
+      else{
+        setColorchange(false);
+      }
+   };
+   window.addEventListener('scroll', changeNavbarColor);
 
     const { nav } = useContext(PortfolioContext)
     const { links } = nav
@@ -27,11 +39,11 @@ const Navigation = () => {
 return (
 <Navbar sticky="top" expand="lg" collapseOnSelect={true}>
 <Container fluid>
-      <Navbar.Brand href="/">angela johnson {`//`} web developer </Navbar.Brand>
+      <Navbar.Brand id="nav-brand" href="/">angela johnson {`//`} web developer </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
       <Nav
-          className="me-auto my-2 my-lg-0"
+          className="ml-auto my-2 my-lg-0"
           style={{ maxHeight: '100px' }}
           navbarScroll
           >
@@ -43,9 +55,8 @@ return (
                   href={url} 
                   key={id}
                   aria-label={name}
-                  className='navvy-link' 
                   activeClass='active'
-
+                  id="navigation-link"
                 >{name}
                   
                 </Nav.Link>
