@@ -2,9 +2,35 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
+  title: 'Angela Johnson | Developer',
+  lang: 'en', // e.g: en, es, fr, jp
   description: '', // e.g: Welcome to my website
+};
+
+// NAV DATA
+export const navData = {
+  links: [
+    {
+      id: nanoid(),
+      name: 'about',
+      url: '#about'
+    },
+    {
+      id: nanoid(),
+      name: 'projects',
+      url: '#projects'
+    },
+    {
+      id: nanoid(),
+      name: 'digital-garden',
+      url: '#digital-garden'
+    },
+    {
+      id: nanoid(),
+      name: 'contact',
+      url: '#contact'
+    }
+  ],
 };
 
 // HERO DATA
