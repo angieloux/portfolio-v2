@@ -141,7 +141,7 @@ Put as many projects object you want inside the `array`.
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'project1.png',
     title: '',
     info: '',
     info2: '',

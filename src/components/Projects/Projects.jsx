@@ -24,15 +24,14 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <Container>
+      <Container md={4}>
         <div className="project-wrapper">
           <Title title="Projects" />
+          <Row lg={2} md={2} sm={1}>
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
-
+            const { title, info, info2, info3, url, repo, img, id } = project;
             return (
-              <Row key={id}>
-                <Col lg={4} sm={12}>
+                <Col key={id}> 
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -43,12 +42,14 @@ const Projects = () => {
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
-                        <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                        <p className="font-weight-bold">
+                          {info ||''}
                         </p>
-                        <p className="mb-4">{info2 || ''}</p>
+                        <p className="mb-4" >{info2 || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}</p>
+
+                        <p className="mb-4" >{info3 || ''}</p>
                       </div>
+                      {url && (
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
@@ -57,6 +58,7 @@ const Projects = () => {
                       >
                         See Live
                       </a>
+                      )}
 
                       {repo && (
                         <a
@@ -70,8 +72,6 @@ const Projects = () => {
                       )}
                     </div>
                   </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -100,16 +100,17 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                            <ProjectImg alt={title} filename={img} width="100px" />
                           </div>
                         </Tilt>
                       </a>
                     </div>
                   </Fade>
                 </Col>
-              </Row>
+
             );
           })}
+          </Row>
         </div>
       </Container>
     </section>
