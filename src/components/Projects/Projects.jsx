@@ -24,10 +24,10 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <Container md={4}>
+      <Container >
         <div className="project-wrapper">
           <Title title="Projects" />
-          <Row lg={2} md={2} sm={1}>
+          <Row  lg={2} md={1} sm={1} xs={1}>
           {projects.map((project) => {
             const { title, info, info2, info3, url, repo, img, id } = project;
             return (
