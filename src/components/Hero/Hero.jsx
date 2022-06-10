@@ -3,10 +3,11 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import resume from '../../assets/resume.pdf'
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta, resume } = hero;
+  const { title, name, subtitle, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -41,9 +42,14 @@ const Header = () => {
               </Link>
               </span>
               <span className="cta-btn cta-btn--hero">
-              <Link to="#" smooth duration={1000}>
-                {resume}
-              </Link>
+              <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={resume}
+                      download
+                    >
+                      download my resume
+                    </a>
             </span>
           </p>
           <span className="back-to-top">

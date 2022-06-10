@@ -22,14 +22,16 @@ export const navData = {
     },
     {
       id: nanoid(),
-      name: 'digital-garden',
-      url: '#digital-garden'
+      name: 'contact',
+      url: '#contact'
     },
     {
       id: nanoid(),
-      name: 'contact',
-      url: '#contact'
+      name: 'digital-garden (tbc)',
+      url: '#digital-garden',
+      underConstruction: true,
     }
+    
   ],
 };
 
@@ -38,17 +40,16 @@ export const heroData = {
   title: 'Hi there.',
   name: 'AJ',
   subtitle: 'I develop things for the web.',
-  cta: 'Explore',
-  resume: 'Resume'
+  cta: 'explore',
+  resume: 'resume'
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  img: 'profile-black.jpg',
+  paragraphOne: 'Web developer, philomath, avid traveller, vinyl collector, cinephile, game lover. Based in Melbourne. For now.',
+  paragraphTwo: 'JavaScript, React, Ruby on Rails, Gatsby, HTML, CSS, Bootstrap.',
+  paragraphThree: `Diploma in IT (full stack web dev) & Bachelor of Agribusiness.`
 };
 
 // PROJECTS DATA
@@ -61,7 +62,7 @@ export const projectsData = [
     info: 'JavaScript, React, Gatsby, Bootstrap, HTML/CSS',
     info2: `This is a v2.0 of my original portfolio website, which was built with basic HTML/CSS last year. It contains my project pieces, a bit about me, my contact info and a downloadable resume. I built it with Gatsby and React and leveraged features like dynamic images, hooks, components and much more. This project has given me a great amount of knowledge about styling and learning more about the mystery that was Bootstrap to me, previously.  `,
     info3: `Future plans: I am a huge fan of node-based thinking & research (i.e.networked thought). I have used tools like Roam Research & Remnote for years and write daily. My entire software engineering journey is encapsulated in them. I think it would be neat to incorporate a digital garden on this site that exemplifies my changing thought processes over time on things that do (and perhaps don't) matter to me.`,
-    url: 'www.angelajohnson.dev',
+    url: 'https://www.angelajohnson.dev',
     repo: 'https://github.com/angieloux/portfolio-v2', // if no repo, the button will not show up
   },
   {
@@ -73,7 +74,7 @@ export const projectsData = [
     info2: `This is a simple to-do app that helps its users keep track of things they need to get done. I built this app as a part of my ongoing learning with React.`,
     info3:`I had built simple React apps previously using class components, and I wanted to understand how to manipulate state via hooks so this is why I did this project. I used the useEffect and useState hooks particularly so to allow a user to add, remove, tick off and filter to-do items meaningfully. It's styled simply with CSS.`,
     url: 'https://ajs-todo-app.netlify.app/',
-    repo: 'https://github.com/angieloux/todo-app', // if no repo, the button will not show up
+    repo: 'https://github.com/angieloux/to-do-app', // if no repo, the button will not show up
   },
   {
     // weather app
@@ -101,7 +102,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'project7.png',
     title: 'HACKATHON: HACKING FOR HUMANITY',
-    info: '',
+    info: 'Figma, Mural, Asana, Contentful',
     info2: `Girls in Tech Australia joined up with numerous charities that are combating climate breakdown in three areas: energy, conservation and waste. The purpose of the hack was to solve a problem one of these charities were facing as best you could in 48 hours. I chose to align with OzHarvest, one of Australia's leading food rescue organisations. They were looking to have a design overhaul of one particular arm of their business.`,
     info3: `I was project manager of a group of 4, and I also created and presented our solution to ~100 people in the final. I led the team through brainstorming (in Mural), project management (in Asana) and then finally presentation. We all created our solution together in Figma and presented a high-fidelity mockup at judging. It was such an amazing opportunity, I met so many great folks, learnt lots about collaborating and time-management specifically with regard to engineering projects.`,
     url: '',
@@ -117,14 +118,24 @@ export const projectsData = [
     info3: `I throughouly enjoyed making this app and it taught me well the need for separating concerns, and how to use classes and modules and other means to do just that. I also used a bunch of different gems (tty-prompt, terminal-table, artii, colorize, etc) to enhance the app. I think it would be a fun project to convert over into a Rails or React app.`,
     url: '',
     repo: 'https://github.com/angieloux/aj-records-ruby-terminal-app', // if no repo, the button will not show up
-  }
+  },
+  {
+      // portfolio v1
+      id: nanoid(),
+      img: 'project5.png',
+      title: 'PORTFOLIO V1',
+      info: 'HTML, CSS, SASS',
+      info2: `This was the first iteration of my portfolio website, that I since refactored into the one you are visitng right now. This was the first 'coding' project I ever worked on. It was a simple static site with few HTML pages (about, projects, blogs, contact) with some CSS/SASS styling.`,
+      url: 'https://alj-codes.netlify.app/',
+      repo: 'https://github.com/angieloux/portfolio-v1' // if no repo, the button will not show up
+    }
 ];
 
 // CONTACT DATA
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'angela.johnson943@gmail.com',
 };
 
 // FOOTER DATA
@@ -132,28 +143,18 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/angieloux',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/angieloux',
     },
   ],
 };
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };

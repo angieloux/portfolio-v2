@@ -39,7 +39,7 @@ const Navigation = () => {
 return (
 <Navbar sticky="top" expand="lg" collapseOnSelect={true}>
 <Container fluid>
-      <Navbar.Brand id="nav-brand" href="/">angela johnson {`//`} web developer </Navbar.Brand>
+      <Navbar.Brand id="nav-brand" href="https://www.angelajohnson.dev">angela johnson {`//`} web developer </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
       <Nav
@@ -49,14 +49,14 @@ return (
           >
           {links &&
             links.map((link) => {
-              const { id, name, url} = link;
+              const { id, name, url, underConstruction} = link;
               return (
                 <Nav.Link 
                   href={url} 
                   key={id}
                   aria-label={name}
                   activeClass='active'
-                  id="navigation-link"
+                  id='navigation-link'
                 >{name}
                   
                 </Nav.Link>
