@@ -2,9 +2,9 @@ import { nanoid } from 'nanoid'
 
 // HEAD DATA
 export const headData = {
-  title: 'Angela Johnson | Developer',
+  title: 'angela johnson | web dev',
   lang: 'en', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  description: 'The website of Angela Johnson, a web developer based in Melbourne, Australia.', // e.g: Welcome to my website
 };
 
 // NAV DATA

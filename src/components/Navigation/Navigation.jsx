@@ -8,16 +8,16 @@ import {Container, Nav, Navbar } from 'react-bootstrap'
 
 
 const Navigation = () => {
-    const [colorChange, setColorchange] = useState(false);
-    const changeNavbarColor = () =>{
-      if(window.scrollY >= 80){
-        setColorchange(true);
-      }
-      else{
-        setColorchange(false);
-      }
-   };
-   window.addEventListener('scroll', changeNavbarColor);
+  //   const [colorChange, setColorchange] = useState(false);
+  //   const changeNavbarColor = () =>{
+  //     if(window.scrollY >= 80){
+  //       setColorchange(true);
+  //     }
+  //     else{
+  //       setColorchange(false);
+  //     }
+  //  };
+  //  window.addEventListener('scroll', changeNavbarColor);
 
     const { nav } = useContext(PortfolioContext)
     const { links } = nav
