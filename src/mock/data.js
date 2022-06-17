@@ -125,7 +125,7 @@ export const projectsData = [
       img: 'project5.png',
       title: 'PORTFOLIO V1',
       info: 'HTML, CSS, SASS',
-      info2: `This was the first iteration of my portfolio website, that I since refactored into the one you are visitng right now. This was the first 'coding' project I ever worked on. It was a simple static site with few HTML pages (about, projects, blogs, contact) with some CSS/SASS styling.`,
+      info2: `This was the first iteration of my portfolio website, that I since refactored into the one you are visiting right now. This was the first 'coding' project I ever worked on. It was a simple static site with few HTML pages (about, projects, blogs, contact) with some CSS/SASS styling.`,
       url: 'https://alj-codes.netlify.app/',
       repo: 'https://github.com/angieloux/portfolio-v1' // if no repo, the button will not show up
     }
