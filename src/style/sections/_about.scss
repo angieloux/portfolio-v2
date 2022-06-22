@@ -18,6 +18,15 @@
     clip-path: none;
   }
 
+  .about-links {
+    color: $white-color;
+  }
+
+  .about-links:hover {
+    text-decoration: underline;
+    color: rgba(83, 140, 83, 0.524);
+  }
+
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;

@@ -47,9 +47,14 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile-black.jpg',
-  paragraphOne: 'Web developer, philomath, avid traveller, vinyl collector, cinephile, game lover. Based in Melbourne. For now.',
-  paragraphTwo: 'JavaScript, React, Ruby on Rails, Gatsby, HTML, CSS, Bootstrap.',
-  paragraphThree: `Diploma in IT (full stack web dev) & Bachelor of Agribusiness.`
+  paragraphOne: 'Web developer, philomath, avid traveller, vinyl collector, cinephile, game lover. Based in Melbourne.',
+  paragraphTwo: 'JavaScript, React, Ruby, Rails, Gatsby, HTML, CSS, Bootstrap.',
+  paragraphThree: `Full stack web development bootcamp `,
+  paragraphFour: `Bachelor of Agribusiness `,
+  uni1: `Coder Academy`,
+  uni2: `University of Queensland`,
+  uni1Url: `https://www.coderacademy.edu.au/`,
+  uni2Url: `https://www.uq.edu.au/`
 };
 
 // PROJECTS DATA

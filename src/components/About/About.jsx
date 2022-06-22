@@ -8,7 +8,7 @@ import resume from '../../assets/resume.pdf'
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree } = about;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, uni1, uni2, uni1Url, uni2Url } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -47,7 +47,17 @@ const About = () => {
                     ``}
                 </p>
                 <p className="about-wrapper__info-text">
-                <p className="font-weight-bold">EDUCATION:</p> {paragraphThree || ""}
+                <p className="font-weight-bold">EDUCATION:</p>
+                  <ul>
+                    <li>
+                      {paragraphThree || ""}
+                      <a href={uni1Url} className="font-weight-bold about-links">({uni1})</a>
+                    </li>
+                    <li>
+                      {paragraphFour || ""}
+                      <a href={uni2Url} className="font-weight-bold about-links">({uni2})</a>
+                    </li>
+                   </ul>
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
