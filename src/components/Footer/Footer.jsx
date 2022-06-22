@@ -39,7 +39,7 @@ const Footer = () => {
         <hr />
         <p className="footer__text">
           © {new Date().getFullYear()} - Angela Johnson{' '}<br/>
-          Gatsby starter provided by <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
+          Gatsby starter provided by <a href="https://github.com/cobiwave/" target="_blank" rel="noopener noreferrer">
             Jacobo Martínez
           </a>
         </p>
