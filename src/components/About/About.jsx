@@ -51,11 +51,11 @@ const About = () => {
                   <ul>
                     <li>
                       {paragraphThree || ""}
-                      <a href={uni1Url} className="font-weight-bold about-links">({uni1})</a>
+                      <a href={uni1Url} className="font-weight-bold about-links" target="_blank">({uni1})</a>
                     </li>
                     <li>
                       {paragraphFour || ""}
-                      <a href={uni2Url} className="font-weight-bold about-links">({uni2})</a>
+                      <a href={uni2Url} className="font-weight-bold about-links" target="_blank">({uni2})</a>
                     </li>
                    </ul>
                 </p>
