@@ -62,6 +62,18 @@ export const projectsData = [
   {
     // portfolio
     id: nanoid(),
+    img: 'project0.png',
+    title: 'WINEDAY (IN PROGRESS)',
+    info: 'JavaScript/React (front end), Ruby/Rails (back end), HTML/CSS, Stripe',
+    info2: `This project is currently in development. It is a full-stack wine store app. Users can make an account, login and search/filter wines in the store, add the ones they want to their cart and checkout. They can also review their orders in their profile. Building this app has given me a huge appreciation for separating concerns, and creating clean code that is both testable and maintainable. I'm also learning more about delicate, impactful styling using Bulma and other tools, as well as understanding how to manipulate Context & State so as to make an intutive and dynamic experience for the user.`,
+    info3: `Future plans: I'd like to build out recommendations based on user's previous orders or based on user's preferences on specific varietals. Perhaps further versions may even include food pairings.`,
+    url: '',
+    repo: 'https://github.com/angieloux/wineday-docs', // if no repo, the button will not show up
+  },
+
+  {
+    // portfolio
+    id: nanoid(),
     img: 'project1.png',
     title: 'PORTFOLIO WEBSITE (v2)',
     info: 'JavaScript, React, Gatsby, Bootstrap, HTML/CSS',
