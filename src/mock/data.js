@@ -1,4 +1,4 @@
-import { nanoid } from 'nanoid'
+import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
@@ -13,25 +13,24 @@ export const navData = {
     {
       id: nanoid(),
       name: 'about',
-      url: '#about'
+      url: '#about',
     },
     {
       id: nanoid(),
       name: 'projects',
-      url: '#projects'
+      url: '#projects',
     },
     {
       id: nanoid(),
       name: 'contact',
-      url: '#contact'
+      url: '#contact',
     },
     {
       id: nanoid(),
       name: 'digital-garden (tbc)',
       url: '#digital-garden',
       underConstruction: true,
-    }
-    
+    },
   ],
 };
 
@@ -41,20 +40,21 @@ export const heroData = {
   name: 'AJ',
   subtitle: 'I develop things for the web.',
   cta: 'explore',
-  resume: 'resume'
+  resume: 'resume',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile-black.jpg',
-  paragraphOne: 'Web developer, philomath, avid traveller, vinyl collector, cinephile, game lover. Based in Melbourne.',
+  paragraphOne:
+    'Web developer, philomath, avid traveller, vinyl collector, cinephile, game lover. Based in Melbourne.',
   paragraphTwo: 'JavaScript, React, Ruby, Rails, Gatsby, HTML, CSS, Bootstrap.',
   paragraphThree: `Full stack web development bootcamp `,
   paragraphFour: `Bachelor of Agribusiness `,
   uni1: `Coder Academy`,
   uni2: `University of Queensland`,
   uni1Url: `https://www.coderacademy.edu.au/`,
-  uni2Url: `https://www.uq.edu.au/`
+  uni2Url: `https://www.uq.edu.au/`,
 };
 
 // PROJECTS DATA
@@ -64,11 +64,13 @@ export const projectsData = [
     id: nanoid(),
     img: 'project0.png',
     title: 'WINEDAY (IN PROGRESS)',
-    info: 'JavaScript/React (front end), Ruby/Rails (back end), HTML/CSS, Stripe',
-    info2: `This project is currently in development. It is a full-stack wine store app. Users can make an account, login and search/filter wines in the store, add the ones they want to their cart and checkout. They can also review their orders in their profile. Building this app has given me a huge appreciation for separating concerns, and creating clean code that is both testable and maintainable. I'm also learning more about delicate, impactful styling using Bulma and other tools, as well as understanding how to manipulate Context & State so as to make an intutive and dynamic experience for the user.`,
+    info: 'JavaScript/React (front end), Ruby/Rails (back end), HTML/CSS, Stripe, PostgreSQL',
+    info2: `This project is currently in development. It is a full-stack wine e-commerce app. Users can sign up, login, search/filter wines, add to their cart, checkout, & review their orders. Building this app has given me a broader understanding of fullstack web development. This includes software architecture, writing clean code that is testable & maintainable, creating delicate but impactful styling using Bulma, manipulating Context & State to make an intuitive & dynamic UX, using Axios to manage fetch requests to the backend & integrating JwT for authentication. I'm currently working on integrating a Stripe checkout platform, building additional interactive features (toast, modals, breadcrumbs) as well as building out reponsive design for smaller screens.`,
     info3: `Future plans: I'd like to build out recommendations based on user's previous orders or based on user's preferences on specific varietals. Perhaps further versions may even include food pairings.`,
-    url: '',
+    url: 'https://wineday.netlify.app/',
     repo: 'https://github.com/angieloux/wineday-docs', // if no repo, the button will not show up
+    repo2: 'https://github.com/angieloux/wineday-front-end',
+    repo3: 'https://github.com/angieloux/wineday-back-end',
   },
 
   {
@@ -89,7 +91,7 @@ export const projectsData = [
     title: 'TO-DO APP',
     info: 'JavaScript, React, HTML/CSS',
     info2: `This is a simple to-do app that helps its users keep track of things they need to get done. I built this app as a part of my ongoing learning with React.`,
-    info3:`I had built simple React apps previously using class components, and I wanted to understand how to manipulate state via hooks so this is why I did this project. I used the useEffect and useState hooks particularly so to allow a user to add, remove, tick off and filter to-do items meaningfully. It's styled simply with CSS.`,
+    info3: `I had built simple React apps previously using class components, and I wanted to understand how to manipulate state via hooks so this is why I did this project. I used the useEffect and useState hooks particularly so to allow a user to add, remove, tick off and filter to-do items meaningfully. It's styled simply with CSS.`,
     url: 'https://ajs-todo-app.netlify.app/',
     repo: 'https://github.com/angieloux/to-do-app', // if no repo, the button will not show up
   },
@@ -123,7 +125,7 @@ export const projectsData = [
     info2: `Girls in Tech Australia joined up with numerous charities that are combating climate breakdown in three areas: energy, conservation and waste. The purpose of the hack was to solve a problem one of these charities were facing as best you could in 48 hours. I chose to align with OzHarvest, one of Australia's leading food rescue organisations. They were looking to have a design overhaul of one particular arm of their business.`,
     info3: `I was project manager of a group of 4, and I also created and presented our solution to ~100 people in the final. I led the team through brainstorming (in Mural), project management (in Asana) and then finally presentation. We all created our solution together in Figma and presented a high-fidelity mockup at judging. It was such an amazing opportunity, I met so many great folks, learnt lots about collaborating and time-management specifically with regard to engineering projects.`,
     url: '',
-    repo: '' // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
   {
     // terminal app
@@ -137,15 +139,15 @@ export const projectsData = [
     repo: 'https://github.com/angieloux/aj-records-ruby-terminal-app', // if no repo, the button will not show up
   },
   {
-      // portfolio v1
-      id: nanoid(),
-      img: 'project5.png',
-      title: 'PORTFOLIO V1',
-      info: 'HTML, CSS, SASS',
-      info2: `This was the first iteration of my portfolio website, that I since refactored into the one you are visiting right now. This was the first 'coding' project I ever worked on. It was a simple static site with few HTML pages (about, projects, blogs, contact) with some CSS/SASS styling.`,
-      url: 'https://alj-codes.netlify.app/',
-      repo: 'https://github.com/angieloux/portfolio-v1' // if no repo, the button will not show up
-    }
+    // portfolio v1
+    id: nanoid(),
+    img: 'project5.png',
+    title: 'PORTFOLIO V1',
+    info: 'HTML, CSS, SASS',
+    info2: `This was the first iteration of my portfolio website, that I since refactored into the one you are visiting right now. This was the first 'coding' project I ever worked on. It was a simple static site with few HTML pages (about, projects, blogs, contact) with some CSS/SASS styling.`,
+    url: 'https://alj-codes.netlify.app/',
+    repo: 'https://github.com/angieloux/portfolio-v1', // if no repo, the button will not show up
+  },
 ];
 
 // CONTACT DATA

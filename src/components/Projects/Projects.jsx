@@ -24,14 +24,14 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <Container >
+      <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          <Row  lg={2} md={1} sm={1} xs={1}>
-          {projects.map((project) => {
-            const { title, info, info2, info3, url, repo, img, id } = project;
-            return (
-                <Col key={id}> 
+          <Row lg={2} md={1} sm={1} xs={1}>
+            {projects.map((project) => {
+              const { title, info, info2, info3, url, repo, img, id, repo2, repo3 } = project;
+              return (
+                <Col key={id}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -76,22 +76,23 @@ const Projects = () => {
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
-                        <p className="font-weight-bold">
-                          {info ||''}
+                        <p className="font-weight-bold">{info || ''}</p>
+                        <p className="mb-4">
+                          {info2 ||
+                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
-                        <p className="mb-4" >{info2 || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}</p>
 
-                        <p className="mb-4" >{info3 || ''}</p>
+                        <p className="mb-4">{info3 || ''}</p>
                       </div>
                       {url && (
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url || '#!'}
+                        >
+                          See Live
+                        </a>
                       )}
 
                       {repo && (
@@ -104,12 +105,33 @@ const Projects = () => {
                           Source Code
                         </a>
                       )}
+
+                      {repo2 && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn text-color-main"
+                          href={repo2}
+                        >
+                          Frontend
+                        </a>
+                      )}
+
+                      {repo3 && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn text-color-main"
+                          href={repo3}
+                        >
+                          Backend
+                        </a>
+                      )}
                     </div>
                   </Fade>
                 </Col>
-
-            );
-          })}
+              );
+            })}
           </Row>
         </div>
       </Container>
