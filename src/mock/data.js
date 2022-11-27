@@ -113,7 +113,7 @@ export const projectsData = [
     title: 'FARMERS MARKETPLACE',
     info: 'Ruby on Rails, Devise authentication, Stripe, AWS (S3), PostgreSQL',
     info2: `Farmers marketplace is a two-sided marketplace created in Ruby on Rails. I was inspired to make this after competing in the Hacking for Humanity hackathon with Girls in Tech Australia in 2021. The purpose of the app is to re-distribute food that would otherwise be wasted by creating a neighbourhood markplace for it to be listed and sold. Creating this app enabled me to get more of a grasp on the aptly name Rails ✨magic✨, and what exactly the functionality of high-level components within MVC architecture are and how they work (e.g. active record associations, database relations, how the model view and controller interact, etc). It uses AWS (S3) for image storage & PostgreSQL as the database for storing listings. Styling was not included as it was beyond the scope of the assignment, but I'd love to build it out in the future fully.`,
-    url: '',
+    url: 'https://farmers-marketplace.herokuapp.com/',
     repo: 'https://github.com/angieloux/farmers-marketplace', // if no repo, the button will not show up
   },
   {
